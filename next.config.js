@@ -1,37 +1,36 @@
-// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
+// /** @type {import('next').NextConfig} */
 // const nextConfig = {
 //   images: {
 //     formats: ['image/avif', 'image/webp'],
 //     domains: ['hotoffers.casino'],
 //   },
 //   swcMinify: true,
-//   analyze: process.env.NODE_ENV === 'production' && process.env.ANALYZE === 'true',
-// };
+// }
 
 // module.exports = nextConfig;
 
-// // Добавляем анализ только в режиме продакшн
-// if (nextConfig.analyze) {
-//   module.exports.webpack = (config, { isServer }) => {
-//     if (!isServer) {
-//       config.plugins.push(new BundleAnalyzerPlugin({
-//         analyzerMode: 'server',
-//         analyzerPort: 8888,
-//         openAnalyzer: true,
-//       }));
-//     }
 
-//     return config;
-//   };
-// }
-/** @type {import('next').NextConfig} */
+const {
+  PHASE_DEVELOPMENT_SERVER,
+  PHASE_PRODUCTION_BUILD,
+} = require("next/constants");
+
+/** @type {import("next").NextConfig} */
 const nextConfig = {
-  images: {
+    images: {
     formats: ['image/avif', 'image/webp'],
     domains: ['hotoffers.casino'],
   },
-  swcMinify: true,
-}
+  reactStrictMode: true,
+};
 
-module.exports = nextConfig;
+module.exports = (phase) => {
+  if (phase === PHASE_DEVELOPMENT_SERVER || phase === PHASE_PRODUCTION_BUILD) {
+    const withPWA = require("@ducanh2912/next-pwa").default({
+      dest: "public",
+    });
+    return withPWA(nextConfig);
+  }
+  return nextConfig;
+};
