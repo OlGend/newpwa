@@ -31,6 +31,7 @@ function PwaModal() {
       // Определить, принял ли пользователь предложение установки
       installPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === "accepted") {
+            setInstallPrompt(!installPrompt)
           console.log("Пользователь принял предложение установки");
         } else {
           console.log("Пользователь отклонил предложение установки");
@@ -46,9 +47,9 @@ function PwaModal() {
   };
 
   return (
-    <div className="olling">
+    <div >
       {installPrompt && (
-        <div>
+        <div className="olling">
           <div className="flex items-center justify-between">
             <div className="mr-2">
               <p>Install our application in your device</p>
