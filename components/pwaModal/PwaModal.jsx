@@ -31,6 +31,7 @@ function PwaModal() {
       // Определить, принял ли пользователь предложение установки
       installPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === "accepted") {
+            setInstallPrompt(!installPrompt);
           console.log("Пользователь принял предложение установки");
         } else {
           console.log("Пользователь отклонил предложение установки");
