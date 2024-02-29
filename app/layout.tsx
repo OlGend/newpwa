@@ -1,26 +1,34 @@
+"use client"
+import { useEffect } from 'react';
 import { Analytics } from "@vercel/analytics/react";
 import { TheHeader } from "@/components/TheHeader";
 import "./globals.css";
-import type { Metadata } from "next";
 import { TheFooter } from "@/components/TheFooter";
 import RandomWindow from "@/components/random/RandomWindow";
-// import BannerWindow from "@/components/banner/BannerWindow";
 import Script from "next/script";
 
 
-export const metadata: Metadata = {
-  manifest: "/manifest.json",
-  title:
-    "Bonus XXXCasinoGuru: Your Comprehensive Source for Casino Reviews and Insights",
-  description:
-    "Welcome to Bonus XXXCasinoGuru, your ultimate destination for comprehensive casino reviews and invaluable insights. Whether you're a seasoned gambler or just starting your casino journey, we're here to guide you through the world of online casinos. Our expert team meticulously reviews casinos, covering game variety, bonuses, payment options, security, and more. With our in-depth analysis and unbiased recommendations, you can make informed decisions and elevate your gaming experience. Explore our extensive database, stay updated with the latest trends, and embark on a rewarding casino adventure with Bonus XXXCasinoGuru.",
-};
+
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e: Event) => {
+      e.preventDefault();
+      // Здесь вы можете сохранить событие для дальнейшего использования
+      // Например, сохранить его в состояние компонента или глобальное состояние
+      console.log("Перехвачено событие beforeinstallprompt");
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    };
+  }, []);
   return (
     <html lang="en">
       <head>
