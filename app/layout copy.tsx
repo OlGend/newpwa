@@ -1,39 +1,66 @@
-"use client"
-import { useEffect } from 'react';
-import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 import { TheHeader } from "@/components/TheHeader";
-import { TheFooter } from "@/components/TheFooter";
 import "./globals.css";
-// Другие импорты...
+import type { Metadata } from "next";
+import { TheFooter } from "@/components/TheFooter";
+import RandomWindow from "@/components/random/RandomWindow";
+// import BannerWindow from "@/components/banner/BannerWindow";
+import Script from "next/script";
 
-export default function RootLayout({ children }: { children: React.ReactNode; }) {
-  useEffect(() => {
-    const handleBeforeInstallPrompt = (e: Event) => {
-      e.preventDefault();
-      // Здесь вы можете сохранить событие для дальнейшего использования
-      // Например, сохранить его в состояние компонента или глобальное состояние
-      console.log("Перехвачено событие beforeinstallprompt");
-    };
 
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+export const metadata: Metadata = {
+  manifest: "/manifest.json",
+  title:
+    "Bonus XXXCasinoGuru: Your Comprehensive Source for Casino Reviews and Insights",
+  description:
+    "Welcome to Bonus XXXCasinoGuru, your ultimate destination for comprehensive casino reviews and invaluable insights. Whether you're a seasoned gambler or just starting your casino journey, we're here to guide you through the world of online casinos. Our expert team meticulously reviews casinos, covering game variety, bonuses, payment options, security, and more. With our in-depth analysis and unbiased recommendations, you can make informed decisions and elevate your gaming experience. Explore our extensive database, stay updated with the latest trends, and embark on a rewarding casino adventure with Bonus XXXCasinoGuru.",
+};
 
-    return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-    };
-  }, []);
-
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  
   return (
-    <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-R5MZ7TVJRB" strategy="afterInteractive" />
-      {/* Другие Script компоненты */}
-      <TheHeader />
-      <main>
-        {children}
-        {/* Analytics или любой другой компонент */}
-      </main>
-      <TheFooter />
-    </>
+    <html lang="en">
+      <head>
+
+      </head>
+      <body>
+   
+        {/* <RandomWindow /> */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-R5MZ7TVJRB" strategy="afterInteractive" />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R5MZ7TVJRB');
+          `}
+        </Script>
+        <Script id="hotjar">
+          {`
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:3873571,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+          `}
+        </Script>
+        <TheHeader />
+   
+        <main>
+
+
+          {children}
+          <Analytics />
+        </main>
+        <TheFooter />
+      </body>
+    </html>
   );
 }
-
-
