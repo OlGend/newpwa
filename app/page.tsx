@@ -7,6 +7,7 @@ import NewBrands from "@/components/NewBrands";
 import ReviewBrands from "@/components/ReviewBrands";
 import PreviewHome from "@/components/PreviewHome";
 import FilteredHome from "@/components/FilteredHome";
+import PwaModal from "@/components/pwaModal/PwaModal";
 // import GuideSlotsHome from "@/components/GuideSlotsHome";
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default async function Home() {
   return (
     <>
       {/* <PreviewHome /> */}
-   
+        <PwaModal />
         <TopBrands />
    
   
