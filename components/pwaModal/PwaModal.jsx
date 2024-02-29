@@ -2,7 +2,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-
+import logo from "@/public/logo72x72.png";
 function PwaModal() {
   const [installPrompt, setInstallPrompt] = useState(null);
 

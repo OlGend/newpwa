@@ -8,8 +8,7 @@ import ReviewBrands from "@/components/ReviewBrands";
 import PreviewHome from "@/components/PreviewHome";
 import FilteredHome from "@/components/FilteredHome";
 import PwaModal from "@/components/pwaModal/PwaModal";
-import Image from "next/image";
-import logo from "@/public/logo72x72.png";
+
 // import GuideSlotsHome from "@/components/GuideSlotsHome";
 
 export const metadata: Metadata = {
