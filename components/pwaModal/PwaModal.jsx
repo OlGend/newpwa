@@ -11,7 +11,7 @@ function PwaModal() {
       // Предотвратить немедленный запуск диалога установки
       e.preventDefault();
       // Сохранить событие, чтобы запустить его позже
-      setInstallPrompt(e);
+    //   setInstallPrompt(e);
     };
 
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
