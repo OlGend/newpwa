@@ -35,3 +35,8 @@ yarn-error.log*
 next-env.d.ts
 
 .env.local
+
+# all other ignore list
+sw.*
+workbox-*
+swe-worker-*

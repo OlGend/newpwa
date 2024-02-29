@@ -9,6 +9,7 @@ import Script from "next/script";
 
 
 export const metadata: Metadata = {
+  manifest: "/manifest.json",
   title:
     "Bonus XXXCasinoGuru: Your Comprehensive Source for Casino Reviews and Insights",
   description:
