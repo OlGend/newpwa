@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "@/public/logo72x72.png";
 function PwaModal() {
-  const [installPrompt, setInstallPrompt] = useState(null);
+  const [installPrompt, setInstallPrompt] = useState();
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
