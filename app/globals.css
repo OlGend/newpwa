@@ -10371,3 +10371,10 @@ input.error {
   border-radius: 2px;
 
 }
+@media (min-width: 320px) and (max-width: 1259px) {
+  .olling {
+    max-width: initial;
+    top: initial;
+    bottom: 0;
+  }
+}

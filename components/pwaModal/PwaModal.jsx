@@ -46,8 +46,9 @@ function PwaModal() {
   };
 
   return (
-    <div className="olling">
+    <div>
       {installPrompt && (
+    <div className="olling">
         <div>
           <div className="flex items-center justify-between">
             <div className="mr-2">
@@ -76,8 +77,9 @@ function PwaModal() {
             </svg>
           </button>
         </div>
-      )}
-    </div>
+        </div>
+        )}
+        </div>
   );
 }
 
