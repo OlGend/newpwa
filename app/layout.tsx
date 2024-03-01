@@ -7,7 +7,6 @@ import RandomWindow from "@/components/random/RandomWindow";
 // import BannerWindow from "@/components/banner/BannerWindow";
 import Script from "next/script";
 
-
 export const metadata: Metadata = {
   manifest: "/manifest.json",
   title:
@@ -24,12 +23,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="Next PWA" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./logo72x72.png" />
+        <link rel="apple-touch-icon" sizes="192x192" href="./logo192x192.png" />
+        <link rel="apple-touch-icon" sizes="384x384" href="./logo384x384.png" />
+        <link rel="apple-touch-icon" sizes="512x512" href="./logo512x512.png" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body>
-   
         {/* <RandomWindow /> */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-R5MZ7TVJRB" strategy="afterInteractive" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-R5MZ7TVJRB"
+          strategy="afterInteractive"
+        />
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -51,10 +59,8 @@ export default function RootLayout({
           `}
         </Script>
         <TheHeader />
-   
+
         <main>
-
-
           {children}
           <Analytics />
         </main>
