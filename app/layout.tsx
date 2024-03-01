@@ -1,19 +1,23 @@
 import { Analytics } from "@vercel/analytics/react";
 import { TheHeader } from "@/components/TheHeader";
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { TheFooter } from "@/components/TheFooter";
 import RandomWindow from "@/components/random/RandomWindow";
 // import BannerWindow from "@/components/banner/BannerWindow";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  manifest: "/manifest.json",
   title:
-    "Bonus XXXCasinoGuru: Your Comprehensive Source for Casino Reviews and Insights",
+  "Bonus XXXCasinoGuru: Your Comprehensive Source for Casino Reviews and Insights",
   description:
     "Welcome to Bonus XXXCasinoGuru, your ultimate destination for comprehensive casino reviews and invaluable insights. Whether you're a seasoned gambler or just starting your casino journey, we're here to guide you through the world of online casinos. Our expert team meticulously reviews casinos, covering game variety, bonuses, payment options, security, and more. With our in-depth analysis and unbiased recommendations, you can make informed decisions and elevate your gaming experience. Explore our extensive database, stay updated with the latest trends, and embark on a rewarding casino adventure with Bonus XXXCasinoGuru.",
+    manifest: "/manifest.json"
 };
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff"
+}
 
 export default function RootLayout({
   children,
@@ -23,7 +27,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-  
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="Next PWA" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./logo72x72.png" />
+        <link rel="apple-touch-icon" sizes="192x192" href="./logo192x192.png" />
+        <link rel="apple-touch-icon" sizes="384x384" href="./logo384x384.png" />
+        <link rel="apple-touch-icon" sizes="512x512" href="./logo512x512.png" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body>
         {/* <RandomWindow /> */}
