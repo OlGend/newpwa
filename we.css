@@ -1,0 +1,439 @@
+.header-logo {
+	max-width: 187px;
+}
+.done {
+	bottom: -1001px !important;
+
+}
+.not-status {
+	display: none;
+}
+.mb-3 {
+	margin-bottom: 15px !important;
+	border-radius: 8px;
+}
+.vip-style-icon-1, .vip-style-icon-2 {
+	display: flex;
+	position: absolute;
+/* 	width: 48px; */
+/* 	height: 35px; */
+	align-self: flex-start;
+/* 	background-image: url(https://askleprechaun.com/wp-content/uploads/2022/09/crown2.png);
+	background-repeat: no-repeat;
+	background-size: cover; */
+	z-index: 9;
+margin-top: 10px;
+margin-left: 10px;
+	
+	
+	background: #ffc106;
+	border-radius: 6px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+	padding: 2px 13px 2px 24px;
+	
+}
+
+.vip-style-icon-1::after, .vip-style-icon-2::after {
+	content: "Hot";
+	color: #1d2730;
+}
+
+.vip-style-icon-1::before, .vip-style-icon-2::before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: 5px;
+	background-image: url(https://askleprechaun.com/wp-content/uploads/2022/09/dark-fire.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.top-casino {
+/* 	border: 2px solid var(--primary-button-color); */
+	box-shadow: 0px 0px 15px -8px #ff6200;
+}
+.top-casino .review-bonus strong {
+	color: #ff6200;
+}
+.custom-style .top-casino .rating .icon {
+	color: #ff6200;
+}
+.custom-style .top-casino .btn-primary {
+	background-color:#ff6200;
+	
+}
+.category-choose .wp-block-column {
+	position: relative;
+	border-radius: 8px !important;
+	overflow: hidden !important;	
+	box-shadow: 2px 4px 9px 2px rgba(68,190,76,.1);
+}
+.category-choose .wp-block-column .wp-block-poka-box-text {
+		overflow: hidden;	
+}
+.category-choose .wp-block-column .wp-block-poka-box-text .sticker {
+	padding: 34px;
+	border-radius: 8px !important;
+	background: rgba(48,130,76, 0.6) !important;
+}
+.category-choose .wp-block-column .wp-block-poka-box-text .sticker .sticker-title {
+	color: #1d2730;
+	margin-bottom: 10px;
+}
+.category-choose .wp-block-column .wp-block-poka-box-text .sticker .sticker-text {
+	color: #fff;
+}
+
+.category-choose .wp-block-column .wp-block-image {
+	overflow: hidden;
+	border-radius: 8px;
+}
+.category-choose .wp-block-column .wp-block-image img{
+	position: absolute;
+	top: 0;
+	border-radius: 8px !important;
+	
+}
+.category-choose .wp-block-column  .wp-block-poka-box-text {
+	position: relative;
+	z-index: 1;
+}
+.table-casino {
+	margin-top: 20px !important;
+}
+
+.custom-style .wp-container-11.wp-block-group {
+	padding-top: 10px !important;
+}
+.custom-style .review-grid-item .review-bonus, .custom-style .review-grid-item.wide .review-bonus {
+	min-height: 43px;
+}
+.custom-style .wp-block-group__inner-container p {
+	font-size: 13px;
+	line-height: 15px;
+		margin-bottom: 0 !important;
+}
+.custom-style .wp-block-group__inner-container h1 {
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 10px !important;
+
+}
+.custom-style .review-extra-links-item a {
+  font-size: 13px;
+	line-height: 16px;
+}
+.custom-style .review-grid-item .review-bonus {
+	padding-top: 8px;
+}
+.has-poka-boxes-background-color-background-color {
+  border-radius: 8px !important;
+}
+.header-bottom .reviews-search-form-wrapper {
+	padding: 0 !important;
+	width: 100%;
+}
+
+.header-bottom .reviews-search-form-wrapper form .reviews-search-form-input {
+	padding: 12px !important;
+}
+.footer-widgets .widgettitle {
+		font-size: 20px;
+	margin-bottom: 12px;
+}
+.wpcf7-list-item-label {
+	font-size:0.75rem;
+	color: #fff;
+	
+}
+.posts-archives-wrapper.text-area .main-col {
+	flex: 100%;
+	max-width: 100%;
+}
+.posts-archives-wrapper.text-area #sidebar-wrapper{
+	display: none;
+}
+
+.wpcf7-checkbox .wpcf7-list-item {
+width: 100%;
+margin-top: 12px;
+display: flex;	
+}
+footer {
+	background-color: #e8ecf2 !important;
+}
+.footer-widgets .widget_text {
+	max-width: initial;
+}
+.footer-section--copyright {
+	padding: 0 !important;	
+}
+.header-menu li a {
+	font-size: 14px;
+}
+#menu-primary-menu-2 {
+	  display: flex;
+  flex-wrap: wrap;
+}
+#menu-primary-menu-2 li a {
+	font-size: 13px !important;
+	
+}
+.radius {
+	border-radius: 8px !important;
+	margin-bottom: 10px !important;
+}
+
+.m-0 {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+.custom-style .topAbsolute {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 34%;
+	top: -25px;
+} 
+.custom-style .review-grid-item .review-logo {
+  margin: 15px auto 15px;
+}
+.custom-style .wp-block-poka-affiliate-list {
+	margin-top: 0px;
+	margin-bottom: 10px !important;
+}
+
+.custom-style .btn-primary {
+	font-size: 14px !important;
+	line-height: 0.9;
+	margin: .625rem 0 .625rem;
+
+}
+.custom-style .review-grid-item .review-logo {
+	max-width: initial !important;
+	border-radius: 0 !important;
+  margin: 0 0 13px !important;
+/*   padding: 15px 0 4px !important; */
+}
+.custom-style .review-grid-item .review-logo .pokageo-flag-circle {
+	top: 15px !important;
+	right: 15px !important;
+}
+.custom-style.review-grid-item .review-bonus {
+  font-size: 13px !important;
+	padding-top: 5px !important;
+}
+.custom-style .wp-block-poka-affiliate-list .row>div, .custom-style .gap-20 {
+	padding-left: 10px;
+	padding-top: 10px;
+
+}
+.custom-style .review-logo > img {
+  height: 90px;
+/* 	width: 70px; */
+  min-width: 70px;
+/* 	object-fit: cover; */
+}
+.custom-style .review-grid-item {
+	background: #fff;
+}
+.custom-style .rating {
+	padding-bottom: 5px;
+}
+.custom-style .review-grid-item .review-logo {
+  margin: 0 0 8px !important;
+/* 	mask-image: linear-gradient(180deg,#26254a 30%,rgba(38,37,74,0.65)); */
+}
+.custom-style .rating  {
+	padding-bottom: 0 !important;
+	
+}
+.custom-style .rating .icon {
+	color: #44be4c;
+	font-size: 16px;
+}
+.sticky-block {
+	position: sticky;
+	top: 0;
+	align-self: flex-start;
+}
+.custom-style.review-grid-item .rating {
+	padding-bottom: 5px;
+}
+.custom-style  .btn-primary {
+	font-size: 14px !important;
+	line-height: 18px;
+	margin: 0.225rem 0;
+	padding: 10px 0;
+}
+.custom-style .review-grid-item .review-bonus {
+	font-size: 13px !important;
+	
+}
+.custom-style .review-grid-item .review-grid-item-bottom {
+  padding: 0 12px;
+
+	mask-image: linear-gradient(0deg,#26254a 90%,rgba(38,37,74,0.1));
+}
+.custom-style .review-grid-item .review-extra-links {
+  padding-bottom: 10px;
+}
+.review-grid-item .review-bonus, .review-grid-item.wide .review-bonus {
+	font-size: 13px;
+	min-height: 55px;
+	line-height: 18px;
+	transition: 0.3s;
+	 overflow: hidden;
+  	display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.review-grid-item .review-bonus:hover, .review-grid-item.wide .review-bonus:hover {
+	height: auto;
+	-webkit-line-clamp: initial;
+}
+.has-poka-boxes-background-color-background-color {
+	border-radius: 8px;
+}
+.modal-request {
+	bottom: 0;
+	position: fixed;
+	right:0;
+	z-index: 1;
+	box-shadow: 0px 11px 45px rgba(31, 48, 80, 0.06), 0px 7.12963px 26.3542px rgba(31, 48, 80, 0.0455556), 0px 4.23704px 14.3333px rgba(31, 48, 80, 0.0364444), 0px 2.2px 7.3125px rgba(31, 48, 80, 0.03), 0px 0.896296px 3.66667px rgba(31, 48, 80, 0.0235556), 0px 0.203704px 1.77083px rgba(31, 48, 80, 0.0144444);
+	border-radius: 20px 0 0 20px;
+}
+.modal-request .container {
+	background-color: #44be4c;
+	background-image: 		 url(https://askleprechaun.com/wp-content/uploads/2022/08/decor.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0px 0 0 20px;
+	padding: 25px 20px 20px;
+	
+}
+.modal-request .banner-popup {
+	max-width: 600px;
+	border-radius: 20px 0 0;
+	background-color: #f0f3f7;
+	padding-top: 10px;
+}
+.modal-request .close-modal {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-image: url(https://askleprechaun.com/wp-content/uploads/2022/08/close-request.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	top: 10px;
+	right: 10px;
+}
+.modal-request .review-bonus {
+	font-size: 1.2rem;
+}
+.hiddenInput {
+	position: absolute;
+	opacity: 0;
+	height: 0;
+}
+.modal-request br {
+	display: none;
+}
+.modal-request .input-style, .modal-request .btn {
+	cursor: pointer !important;
+}
+.modal-request .btn {
+	font-size: 0.9125rem;
+	line-height: 1.2;
+	padding: .9375rem 3.875rem;
+	border: none;
+	width: 100%;
+	margin-top: 22px;
+}
+.modal-request .input-style {
+	padding: 11px 25px
+}
+.modal-request .review-box-disclaimer {
+	padding: 12px 20px;
+}
+.modal-request .container .review-box-disclaimer {
+	padding: 0;
+	color: #fff;
+}
+.modal-request .container .review-box-disclaimer a {
+	text-decoration: underline;
+}
+.modal-request .text-left {
+	text-align: left;
+	padding: 20px 20px 0;
+}
+.white-style-card .review-grid-item {
+	background-color: #fff;
+}
+.justify-content-center {
+	justify-content: center;	
+}
+@media(min-width:320px) and (max-width:767px) {
+	.review-grid-item.wide .review-rating {
+  justify-content: center;
+}
+	.review-grid-item.wide .flex-right-container {
+		margin-right: initial !important;
+	}
+.sticky-block {
+	position: initial;
+}
+	.modal-request {
+		bottom: 0;
+		height: auto;
+		border-radius: 20px;
+/*   	display: flex; */
+		bottom: 0;
+  	flex-direction: column;
+  	justify-content: flex-end;
+	}
+	.modal-request .text-left {
+		padding: 20px 30px 0;
+	}
+	.modal-request .review-bonus {
+		font-size: 1.05rem;
+		text-align: center;
+	}
+	.modal-request .review-box-disclaimer {
+		padding: 12px 30px;
+		text-align: center;
+		font-size: .56rem;
+		line-height: 0.75rem;
+	}
+	.modal-request .container {
+		border-radius: 0px;
+		padding: 25px 30px 20px;
+	}
+	.modal-request .banner-popup {
+		box-shadow: 0 0 16px rgba(68, 190, 76,.22);
+		border-radius: 20px 20px 0px 0px;
+	}
+	.modal-request .input-style, .modal-request .btn {
+  	padding: 5px 15px;
+		border-radius: 10px;
+		height: 38px;
+		font-size: 0.6125rem;
+	}
+	.modal-request .btn {
+		margin-top: 15px;
+	}
+	.modal-request .container .review-box-disclaimer {
+   font-size: .65rem;
+  line-height: 0.85rem;
+	padding: 10px 15px 0;
+	}
+}
+.review-box.review-box--style2 .review-box-disclaimer{
+	display:none;
+}

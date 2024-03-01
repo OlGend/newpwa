@@ -173,8 +173,6 @@ const TheHeader = () => {
     }
   }, []);
 
-
-
   return (
     <header className="header">
       <div className="header__bg">
