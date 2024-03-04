@@ -8,6 +8,7 @@ import ReviewBrands from "@/components/ReviewBrands";
 import PreviewHome from "@/components/PreviewHome";
 import FilteredHome from "@/components/FilteredHome";
 import PwaModal from "@/components/pwaModal/PwaModal";
+import Notification from "@/components/notification/Notification.jsx";
 
 // import GuideSlotsHome from "@/components/GuideSlotsHome";
 
@@ -22,10 +23,10 @@ export default async function Home() {
   return (
     <>
       {/* <PreviewHome /> */}
-   
+
       <PwaModal />
       <TopBrands />
-
+      <Notification />
       <div className="background-block">
         <FilteredHome />
         {/* <NewBrands /> */}
