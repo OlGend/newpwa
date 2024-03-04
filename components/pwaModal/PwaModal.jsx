@@ -74,7 +74,7 @@ function PwaModal() {
             </div>
             <p>
               To install the app, tap the share icon 
-              <Image width={20} height={30} src={logo} alt={`${logo}`} />
+              <Image className="ml-1" width={20} height={30} src={ios} alt={`${ios}`} />
 
             </p>
             <p>and then{" "}
