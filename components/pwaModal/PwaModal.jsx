@@ -1,11 +1,8 @@
-
-
-
-
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "@/public/logo72x72.png";
+import ios from "@/public/ios.png";
 
 function PwaModal() {
   const [installPrompt, setInstallPrompt] = useState();
@@ -25,7 +22,10 @@ function PwaModal() {
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
 
     return () => {
-      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+      window.removeEventListener(
+        "beforeinstallprompt",
+        handleBeforeInstallPrompt
+      );
     };
   }, []);
 
@@ -68,28 +68,35 @@ function PwaModal() {
       {isIOS && (
         <div className="olling">
           <div className="mr-2">
+            <div className="flex flex-col items-center">
+              <p>How to install?</p>
+              <Image width={72} height={72} src={logo} alt={`${logo}`} />
+            </div>
+            <p>
+              To install the app, tap the share icon 
+              <Image width={20} height={30} src={logo} alt={`${logo}`} />
 
-          <p>To install the app, tap the share icon and then <strong>&#39;Add to Home Screen&#39;</strong>.</p>
-          <button onClick={close} className="closing">
-            {" "}
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8.44487 24L24 8.02771M8 8L23.5551 23.9723"
-                stroke="#fff"
-                stroke-width="2.8"
-                stroke-linecap="round"
-              ></path>
-            </svg>
-          </button>
+            </p>
+            <p>and then{" "}
+              <strong>&#39;Add to Home Screen&#39;</strong>.</p>
+            <button onClick={close} className="closing">
+              {" "}
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.44487 24L24 8.02771M8 8L23.5551 23.9723"
+                  stroke="#fff"
+                  stroke-width="2.8"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </button>
           </div>
-          <button onClick={close} className="btn btn-primary">OK</button>
-          <Image width={72} height={72} src={logo} alt={`${logo}`} />
         </div>
       )}
     </div>

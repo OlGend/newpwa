@@ -10378,3 +10378,6 @@ input.error {
     bottom: 0;
   }
 }
+.mr-2 .flex img {
+  border-radius: 8px;
+}
