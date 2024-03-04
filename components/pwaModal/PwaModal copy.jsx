@@ -62,7 +62,7 @@ function PwaModal() {
       )}
       {isIOS && (
         <div className="modal">
-          <p>To install the app, tap the share icon and then <strong>&#39;Add to Home Screen&#39;</strong>.</p>
+          <p>To install the app, tap the share icon and then <strong>'Add to Home Screen'</strong>.</p>
           <button onClick={close} className="btn btn-primary">OK</button>
         </div>
       )}
