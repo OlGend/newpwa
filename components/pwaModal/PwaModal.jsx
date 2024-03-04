@@ -2,7 +2,9 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "@/public/logo72x72.png";
-import ios from "@/public/ios.png";
+import ios from "@/public/ios2.png";
+import ios3 from "@/public/ios3.png";
+
 
 function PwaModal() {
   const [installPrompt, setInstallPrompt] = useState();
@@ -78,7 +80,9 @@ function PwaModal() {
 
             </p>
             <p className="flex justify-center items-center">and then{" "}
-              <strong>&#39;Add to Home Screen&#39;</strong>.</p>
+              <strong>&#39;Add to Home Screen&#39;</strong></p>
+              <Image className="ml-1" width={20} height={30} src={ios3} alt={`${ios3}`} />
+
             <button onClick={close} className="closing">
               {" "}
               <svg
