@@ -76,12 +76,12 @@ function PwaModal() {
             </div>
             <p className="flex justify-center items-center mt-2">
               To install the app, tap the share icon 
-              <Image className="ml-1" width={20} height={30} src={ios} alt={`${ios}`} />
+              <Image className="ml-1" width={30} height={40} src={ios} alt={`${ios}`} />
 
             </p>
             <p className="flex justify-center items-center">and then{" "}
-              <strong>&#39;Add to Home Screen&#39;</strong></p>
-              <Image className="ml-1" width={20} height={30} src={ios3} alt={`${ios3}`} />
+              <strong>&#39;Add to Home Screen&#39;</strong>   <Image className="ml-1" width={40} height={50} src={ios3} alt={`${ios3}`} /></p>
+            
 
             <button onClick={close} className="closing">
               {" "}
