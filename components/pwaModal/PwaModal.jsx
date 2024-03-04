@@ -47,6 +47,8 @@ function PwaModal() {
 
   const close = () => {
     setInstallPrompt(null);
+    setIsIOS(null);
+
   };
 
   return (
