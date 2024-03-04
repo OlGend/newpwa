@@ -1,3 +1,7 @@
+
+
+
+
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -46,7 +50,7 @@ function PwaModal() {
   return (
     <div>
       {installPrompt && !isIOS && (
-        <div className="modal">
+        <div className="olling">
           <div className="flex items-center justify-between">
             <div className="mr-2">
               <p>Install our application on your device</p>
@@ -62,9 +66,30 @@ function PwaModal() {
         </div>
       )}
       {isIOS && (
-        <div className="modal">
+        <div className="olling">
+          <div className="mr-2">
+
           <p>To install the app, tap the share icon and then <strong>&#39;Add to Home Screen&#39;</strong>.</p>
+          <button onClick={close} className="closing">
+            {" "}
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.44487 24L24 8.02771M8 8L23.5551 23.9723"
+                stroke="#fff"
+                stroke-width="2.8"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </button>
+          </div>
           <button onClick={close} className="btn btn-primary">OK</button>
+          <Image width={72} height={72} src={logo} alt={`${logo}`} />
         </div>
       )}
     </div>
