@@ -72,7 +72,7 @@ function PwaModal() {
               <p>How to install?</p>
               <Image width={72} height={72} src={logo} alt={`${logo}`} />
             </div>
-            <p>
+            <p className="flex justify-center">
               To install the app, tap the share icon 
               <Image className="ml-1" width={20} height={30} src={ios} alt={`${ios}`} />
 
