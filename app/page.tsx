@@ -10,6 +10,8 @@ import FilteredHome from "@/components/FilteredHome";
 import PwaModal from "@/components/pwaModal/PwaModal";
 import Notification from "@/components/notification/Notification.jsx";
 
+import Push from "@/components/notification/Push.jsx"
+
 // import GuideSlotsHome from "@/components/GuideSlotsHome";
 
 export const metadata: Metadata = {
@@ -27,6 +29,7 @@ export default async function Home() {
       <PwaModal />
       <TopBrands />
       <Notification />
+      <Push />
       <div className="background-block">
         <FilteredHome />
         {/* <NewBrands /> */}
