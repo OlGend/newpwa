@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react';
 import img1 from "@/public/MTC.png"
 
